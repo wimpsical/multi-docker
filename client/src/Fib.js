@@ -20,7 +20,7 @@ class Fib extends Component {
             const values = await axios.get('/api/values/current');
             this.setState({ values: values.data}); 
         }catch(err){
-            alert(err);
+            console.log(err);
         }
     }
 
@@ -31,7 +31,7 @@ class Fib extends Component {
                 seenIndexes: seenIndexes.data,
             });
         }catch(err){
-            alert(err);
+            console.log(err);
         }
     }
 
@@ -44,7 +44,7 @@ class Fib extends Component {
             }); 
             this.setState({ index: ''});
         }catch(err){
-            alert(err);
+            console.log(err);
         }
     }
 
